@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Газель жүк тасымалы — [Астана] — Қоңырау: +7 (776) 361-01-93 / +7 (777) 324-88-25</title>
+  <meta name="description" content="Грузоперевозки Газель, переезд в квартиру/офис, доставка грузов.Оборудование и опытные грузчики. Бронирование — 1 минута. Тел: +7 (776) 361-01-93, +7 (777) 324-88-25" />
+  <link rel="icon" href="data:," />
+  <style>
+    /* Basic reset */
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter, system-ui, Arial, sans-serif;line-height:1.45;color:#1f2937}
+    header{display:flex;justify-content:space-between;align-items:center;padding:18px 24px;background:#0b74da;color:white;position:sticky;top:0;z-index:20}
+    .logo{font-weight:700}
+    .phone{display:flex;gap:12px;align-items:center}
+    a.button{background:#ffba00;padding:10px 14px;border-radius:8px;color:#111;font-weight:700;text-decoration:none}
+    main{padding:28px 16px;max-width:1100px;margin:0 auto}
+    .hero{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;padding:28px;background:#f3f4f6;border-radius:12px}
+    .hero .left{flex:1;min-width:260px}
+    .hero h1{font-size:28px;margin-bottom:8px}
+    .hero p{color:#374151;margin-bottom:12px}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+    section{margin-top:22px}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .card{padding:16px;border-radius:10px;background:white;box-shadow:0 1px 4px rgba(10,10,10,0.06)}
+    .price-table{display:flex;flex-direction:column;gap:8px}
+    .price{display:flex;justify-content:space-between;padding:10px 12px;border-radius:8px;background:#fff}
+    .steps{display:flex;gap:12px;flex-wrap:wrap}
+    .step{flex:1;min-width:160px;padding:12px;background:#fff;border-radius:10px;text-align:center}
+    form.contact{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    form.contact textarea{grid-column:1/3;height:90px;padding:10px}
+    footer{margin-top:28px;padding:18px;text-align:center;color:#6b7280}
+    @media(max-width:720px){
+      .hero{flex-direction:column}
+      form.contact{grid-template-columns:1fr}
+      form.contact textarea{grid-column:1/2}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Газель<span style="opacity:.9">.KZ</span></div>
+    <div class="phone">
+      <a href="tel:+77763610193" style="color:white;text-decoration:none;font-weight:700">+7 (776) 361-01-93</a>
+      <a class="button" href="https://wa.me/77763610193?text=Сәлем!%20Газель%20тапсырыс%20бергім%20келеді.Здравствуйте! Хочу сделать заказ" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Hero">
+      <div class="left">
+        <h1>Газель Грузоперевозки - быстро, надежно,удобно,</h1>
+        <p>Переезд в квартиру или офис, доставка грузов. Оборудование и опытные грузчики. Бронирование — 1 минута.</p>
+        <div class="cta-row">
+          <a class="button" href="tel:+77763610193">Звонок сейчас</a>
+          <a class="button" href="#order" style="background:#06b6d4;color:white">Онлайн заказ</a>
+        </div>
+      </div>
+      <div class="right" style="min-width:260px;display:flex;flex-direction:column;gap:10px">
+        <div style="padding:14px;border-radius:10px;background:white;box-shadow:0 1px 6px rgba(0,0,0,0.06)">
+          <strong>Быстрый расчет цены</strong>
+          <div style="margin-top:8px;display:flex;gap:8px">
+            <select id="type" style="flex:1;padding:8px;border-radius:6px;border:1px solid #e5e7eb">
+              <option value="city">По городу</option>
+              <option value="suburb">Аутгарон/За городом</option>
+            </select>
+            <input id="hours" type="number" min="1" value="2" style="width:72px;padding:8px;border-radius:6px;border:1px solid #e5e7eb" />
+          </div>
+          <div style="margin-top:10px;display:flex;gap:8px">
+            <button class="button" onclick="calc()" style="flex:1">Подсчитать</button>
+          </div>
+          <div id="result" style="margin-top:10px;color:#065f46;font-weight:700"></div>
+        </div>
+        <div style="padding:12px;border-radius:10px;background:#fff;border:1px dashed #e6eef6;text-align:center">Круглосуточно</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Услуги</h2>
+      <div class="cards" aria-label="Services">
+        <div class="card"><strong>Переезд квартиры</strong><p>Даже по выходным.</p></div>
+        <div class="card"><strong>Переезд офис</strong><p>Быстро и аккуратно в рабочее время .</p></div>
+        <div class="card"><strong>Индивидуальная доставка</strong><p>Доставка товаров по городу.</p></div>
+        <div class="card"><strong>Междугородние перевозки </strong><p>По междугороднему соглашению.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Цены (пример)</h2>
+      <div class="price-table">
+        <div class="price"><span>Минимум (1 час)</span><strong>7 000 ₸</strong></div>
+        <div class="price"><span>Каждый дополнительный час</span><strong>7 000 ₸</strong></div>
+        <div class="price"><span>Дополнительный грузчик</span><strong>3 500 ₸/сағ</strong></div>
+        <div class="price"><span>Полный день автомобиля</span><strong>Договорный</strong></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Как мы работаем</h2>
+      <div class="steps">
+        <div class="step"><strong>1</strong><p>Прием заказов</p></div>
+        <div class="step"><strong>2</strong><p>Прибытие и упаковка</p></div>
+        <div class="step"><strong>3</strong><p>Доставка груза</p></div>
+      </div>
+    </section>
+
+    <section id="order">
+      <h2>Онлайн заказ</h2>
+      <form class="contact" onsubmit="event.preventDefault(); sendOrder()">
+        <input type="text" id="name" placeholder="ФИО" required style="padding:10px;border-radius:8px;border:1px solid #e5e7eb" />
+        <input type="tel" id="phone" placeholder="Телефон" required style="padding:10px;border-radius:8px;border:1px solid #e5e7eb" />
+        <input type="text" id="from" placeholder="Откуда (адрес)" style="padding:10px;border-radius:8px;border:1px solid #e5e7eb" />
+        <input type="text" id="to" placeholder="Место прибытия  (адрес)" style="padding:10px;border-radius:8px;border:1px solid #e5e7eb" />
+        <textarea id="note" placeholder="Примечание / Описание груза"></textarea>
+        <button class="button" type="submit" style="grid-column:1/3">Отправить заказ</button>
+      </form>
+      <div id="msg" style="margin-top:10px;color:#065f46;font-weight:700"></div>
+    </section>
+
+    <section>
+      <h2>Наши контакты</h2>
+      <p>Тел: <a href="tel:+77773248825">+7 (776) 361-01-93</a></p>
+      <p>Email: <a href="mailto:gruz_perevozka001@mail.ru">gruz_perevozka001@mail.ru</a></p>
+      <p>Адрес: Астана, Б.Момышұлы 15А</p>
+      <!-- Map placeholder: өзгерту үшін Google Maps iframe қолдануға болады -->
+      <div style="margin-top:8px;border-radius:8px;overflow:hidden">
+        <iframe src="https://maps.app.goo.gl/WtfHAmRRKgZQGsDQ9" style="width:100%;height:240px;border:0"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    ©️ <span id="yr"></span> Газель Грузоперевозки — Все правы защищены.
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    function calc(){
+      const type = document.getElementById('type').value;
+      const hours = Number(document.getElementById('hours').value) || 1;
+      const base = type === 'city' ? 6000 : 7000;
+      const perHour = 3500;
+      const total = base + (hours-1)*perHour;
+      document.getElementById('result').textContent = 'Баға (шамамен): ' + total.toLocaleString() + ' ₸';
+    }
+
+    function sendOrder(){
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const from = document.getElementById('from').value.trim();
+      const to = document.getElementById('to').value.trim();
+      const note = document.getElementById('note').value.trim();
+
+     
+      const yourNumber = "77763610193";
+
+      const msg =
+        "Новый заказ:%0A" +
+        "ФИО: " + name + "%0A" +
+        "Телефон: " + phone + "%0A" +
+        "Откуда: " + from + "%0A" +
+        "Место прибытия: " + to + "%0A" +
+        "Примечание: " + note;
+
+      const waLink = "https://wa.me/" + yourNumber + "?text=" + msg;
+      window.open(waLink, "_blank");
+    }
+  </script>
+</body>
+</html>
